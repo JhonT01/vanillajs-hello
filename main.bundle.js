@@ -19035,6 +19035,9 @@ window.onload = function () {
   //write your code here
   console.log("Hello console!");
   printExcuse();
+  document.querySelector('btn').addEventListener("click", function () {
+    printExcuse();
+  });
 };
 
 function excuseGen() {
