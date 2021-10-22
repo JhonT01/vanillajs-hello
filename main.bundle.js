@@ -19034,10 +19034,10 @@ __webpack_require__.r(__webpack_exports__);
 window.onload = function () {
   //write your code here
   console.log("Hello console!");
-  printExcuse();
-  document.querySelector('btn').addEventListener("click", function () {
+  document.querySelector("#btn").addEventListener("click", function () {
     printExcuse();
   });
+  printExcuse();
 };
 
 function excuseGen() {
