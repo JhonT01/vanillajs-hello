@@ -19034,6 +19034,7 @@ __webpack_require__.r(__webpack_exports__);
 window.onload = function () {
   //write your code here
   console.log("Hello console!");
+  printExcuse();
 };
 
 function excuseGen() {
@@ -19045,9 +19046,10 @@ function excuseGen() {
   return excuse;
 }
 
-function printExcuse(excuse) {
-  var print = document.getElementById("Excuse");
-  frame.innerHTML = "${excuse}";
+function printExcuse() {
+  var excuse = excuseGen();
+  var frame = document.getElementById("ExcuseDiv");
+  frame.innerHTML = "<h1 class=\"mt-5\">".concat(excuse, "</h1>");
 }
 
 function randomPick(maxNum) {
